@@ -455,11 +455,6 @@ $('.testimonial8-carousel-area').owlCarousel({
 
    
   $(window).on('load', function(event) {
-
-       setTimeout(function () {
-            $("#pre-load").fadeToggle();
-          }, 500);    
-          
       //  aos
       AOS.init();
 

@@ -1,166 +1,3 @@
-/*
-============================
-Name: Consalt
-Version: 1.0.0
-Description:
-Author:Abdul Rabby
-Author URI:
-Location:
-============================
-*/
-
-
-/*
-
-CSS LIST =====>
-
-===========================
-HEADER AREA CSS
-===========================
-WELCOME AREA CSS
-===========================
-ABOUT AREA CSS
-===========================
-SERVICE AREA CSS
-===========================
-COOUNTER AREA CSS
-===========================
-PRICING PLAN AREA CSS
-===========================
-COMPANY AREA CSS
-===========================
-TESTIMONIAL AREA CSS
-===========================
-BLOG AREA CSS
-===========================
-CTA AREA CSS
-===========================
-CLIENT AREA CSS
-===========================
-CASE STUDY AREA CSS
-===========================
-CONTACT AREA CSS
-===========================
-CLIENT AREA CSS
-===========================
-FOOTER AREA CSS
-===========================
-
-/*----===========PRELOADER AREA CSS----============*/
-#pre-load {
-	background: #1D2940;
-	bottom: 0;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	width: 100%;
-	z-index: 9999;
-}
-#pre-load.loader2 {
-  background: #1A237E;
-}
-#pre-load.loader3 {
-  background: #0B111F;
-}
-#pre-load.loader4 {
-  background: #044E7C;
-}
-#pre-load.loader5 {
-  background: #071018;
-}
-#pre-load.loader6 {
-  background: #35AC39;
-}
-#pre-load.loader6 .loader .loader-container:before{
-  display: none;
-}
-#pre-load.loader7 {
-  background: #EB7C3A;
-}
-#pre-load.loader8 {
-  background: #196C68;
-}
-#pre-load.loader9 {
-  background: #1DAF68;
-}
-#pre-load.loader10 {
-  background: #86B03C;
-}
-#pre-load.loader11 {
-  background: #22BFCA;
-}
-#pre-load.loader12 {
-  background: #49357F;
-}
-#pre-load.loader9 .loader .loader-container:before{
-  display: none;
-}
-#pre-load.loader7 .loader .loader-container:before{
-  display: none;
-}
-.loader .loader-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
-  border: 3px solid #fff;
-  border-radius: 50%;
-}
-.loader .loader-container:before {
-  position: absolute;
-  content: "";
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
-  /* border-top: 3px solid #044E7C; */
-  border-radius: 50%;
-  animation: loaderspin 1.8s infinite ease-in-out;
-  -webkit-animation: loaderspin 1.8s infinite ease-in-out;
-}
-.loader .loader-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  text-align: center;
-}
-.loader .loader-icon img {
-  animation: loaderpulse alternate 900ms infinite;
-  width: 40px;
-}
-@keyframes loaderspin {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-@-webkit-keyframes loaderspin {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-@keyframes loaderpulse {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.2);
-  }
-}
-
 .progress-wrap {
  position: fixed;
  right: 30px;
@@ -190,7 +27,7 @@ FOOTER AREA CSS
  text-align: center;
  line-height: 56px;
  font-size: 18px;
- /* color: #1A237E; */
+ /* color: #08195c; */
  left: 0;
  top: 0;
  height: 56px;
@@ -229,7 +66,7 @@ FOOTER AREA CSS
  fill: none;
 }
 .progress-wrap svg.progress-circle path {
- /* stroke: #1A237E; */
+ /* stroke: #08195c; */
  stroke-width: 4;
  box-sizing: border-box;
  -webkit-transition: all 200ms linear;
@@ -282,7 +119,7 @@ FOOTER AREA CSS
   margin-top: -25px;
 }
 .main-menu-ex.homepage5.mainmenuex ul li ul li a:hover {
-  background: #1A237E;
+  background: #08195c;
 }
 .quick_contact_content small {
   font-weight: 400;
@@ -337,6 +174,9 @@ FOOTER AREA CSS
   margin: 0 8px 0 0;
 }
 
+.font-dark {
+  color: #0e1124;
+}
 .social.social4-menu.social4 ul li {
   display: inline-block;
 }
@@ -451,7 +291,7 @@ ul.theme-mega-menu li.mega-menu {
   left: 0;
   top: 50px;
   background: #fff;
-  width: 250px;
+  width: 340px;
   border-radius: 4px;
   box-shadow: rgb(0 0 0 / 20%) 0px 20px 30px;
   padding: 10px;
@@ -807,16 +647,15 @@ ul.dropdown-padding.color-s-4 li:hover {
 /* homepage-2 header */
 a.theme-btn5 {
   border-radius: 4px;
-  background: #1A237E;
-  color: #ffff;
+  background: #08195c;
+  color: #ffb91a;
   padding: 14px 20px;
-  text-transform: uppercase;
   transition: all .4s ease-in-out;
   display: inline-block;
   position: relative;
   z-index: 2;
   overflow: hidden;
-  border: 1px solid #1A237E;
+  border: 1px solid #08195c;
 }
 a.theme-btn5 span{
   display: inline-block;
@@ -847,7 +686,7 @@ a.theme-btn5:hover::after{
   
 }
 a.theme-btn5:hover{
-  color: #1A237E;
+  color: #08195c;
 }
 
 .all-3-btn.theme-btn1 {
@@ -942,7 +781,7 @@ a.shedule-btn2:hover{
   color: #fff;
 }
 .main-menu-ex.homepage5 ul li ul li ul {
-  margin-left: 230px;
+  margin-left: 330px;
   top: -1px;
 }
 .main-menu-ex.homepage5 ul li ul li ul{
@@ -1070,12 +909,12 @@ a.shedule-btn2:hover{
   transform: rotate(-45deg);
 }
 .theme-btn11:hover {
-  background:#1D2940;
+  background:#08195c;
   transition: all .4s ease-in-out;
 }
 
 .theme-btn11:hover {
-  background: #1D2940;
+  background: #08195c;
   transition: all .4s ease-in-out;
   color: #000;
 }
@@ -1120,7 +959,7 @@ a.theme-btn11.consulting7btn:hover {
   background: #196C68;
 }
 .consultingbtn2 {
-    background: #1A237E;
+    background: #08195c;
 }
 .consultingbtn2 span{
   color: #fff;
@@ -1227,7 +1066,7 @@ img.imgw-100 {
   object-fit: cover;
 }
 .welcome-header-area{
-  background-image:url("https://html.vikinglab.agency/consult/assets/images/background/homepage1-bacground.png");
+  background-image:url("/webstatic/assets/images/homepage1-bacground.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1407,7 +1246,7 @@ img.elementor-2 {
 
 /* homepage2-welcome starts */
 .welcome2-section-area{
-  background-image: url("https://html.vikinglab.agency/consult/assets/images/background/homepage2-background.png");
+  background-image: url("/webstatic/assets/images/pattern.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1421,7 +1260,7 @@ span.maximum {
   padding: 10px;
 }
 span.succes {
-  color: #1A237E;
+  color: #feb51c;
 }
 .theme-btn4.margn-left {
   margin-left: 0;
@@ -1573,7 +1412,7 @@ img.elementor-16 {
 }
 /* homepage3-welcome starts */
 .welcome4-section-area {
-    background: var(--main-color, #1D2940);
+    background: var(--main-color, #08195c);
     position: relative;
 }
 span.trust {
@@ -2432,7 +2271,7 @@ a.consulitingbt7{
   transition: all .4s ease-in-out;
 }
 .welcome9-section-area{
-  background-image: url("https://html.vikinglab.agency/consult/assets/images/background/Header8bg.png");
+  background-image: url("/webstatic/assets/images/Header8bg.png");
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
@@ -3331,7 +3170,7 @@ span.financila {
 .pera-background::after {
   position: absolute;
   content: "";
-  background: #1A237E;
+  background: #08195c;
   height: 100%;
   top: 0;
   left: 0;
@@ -3441,14 +3280,15 @@ span.about3span {
 }
 a.theme6-btn6 {
   border-radius: 2px;
-  background: var(--main-color, #1D2940);
+  background: var(--main-color, #08195c);
   display: inline-block;
   padding: 18px 22px;
+  color: #ffb91a;
   transition: all .4s ease-in-out;
 }
 a.theme6-btn6.bakgrnd5:hover {
   background: #fff;
-  color: var(--main-text-color, #1D2940);
+  color: var(--main-text-color, #08195c);
   border: none;
 }
 .theme6-btn6.backgrnd6{
@@ -3457,7 +3297,7 @@ a.theme6-btn6.bakgrnd5:hover {
   margin-left: 16px;
 }
 .theme6-btn6.backgrnd6:hover{
-  background: var(--main-color, #1D2940);
+  background: var(--main-color, #08195c);
   color:#fff ;
   border: none;
 }
@@ -3488,7 +3328,7 @@ a.theme6-btn6:hover{
 }
 .counter3-boxarea4:hover{
   border-radius: 2px;
-background: var(--main-color, #1D2940);
+background: var(--main-color, #08195c);
 box-shadow: 0px 2px 48px 0px rgba(0, 0, 0, 0.09);
 transition: all .4s ease-in-out;
 color: #fff;
@@ -3509,7 +3349,9 @@ img.elementor-9 {
   left: -35px;
 }
 .welcomeabout-area{
-  background: #1D2940;
+     background: url(/webstatic/assets/images/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .welcomeabout-area {
     padding: 140px 0 100px;
@@ -3533,7 +3375,7 @@ img.elementor-9 {
   width: 100%;
   left: 0;
   top: 0;
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   transition: all .4s ease-in-out;
   z-index: -1;
 }
@@ -3548,7 +3390,10 @@ img.elementor-9 {
   transition: all .4s ease-in-out;
 }
 .lawprovide-section-area{
-  background: var(--gray-color, #EFF7FF);
+  background: url("/webstatic/assets/images/pattern.png");
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
   position: relative;
 }
 .lawprovide-textarea {
@@ -3623,11 +3468,13 @@ img.missionimg2 {
 }
 .vission-section-area{
   position: relative;
-  background: var(--gray-color, #EFF7FF);
+      background: url(/webstatic/assets/images/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 button#pills-profile-tab {
   background: none;
-  color: var(--main-text-color, #1D2940);
+  color: var(--main-text-color, #08195c);
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -3642,7 +3489,7 @@ button#pills-profile-tab:hover {
 }
 button#pills-home-tab {
   background: none;
-  color: var(--main-text-color, #1D2940);
+  color: var(--main-text-color, #08195c);
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -3658,7 +3505,7 @@ button#pills-home-tab:hover {
 }
 button#pills-contact-tab {
   background: none;
-  color: var(--main-text-color, #1D2940);
+  color: var(--main-text-color, #08195c);
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -4210,7 +4057,7 @@ span.aropaln2 {
 
 /*----=========== SERVICE AREA CSS----============*/
 .service-tax-area{
-  background-image: url("https://html.vikinglab.agency/consult/assets/images/background/ourservice-bacground.png");
+  background-image: url("/webstatic/assets/images/ourservice-bacground.png");
   background-repeat: no-repeat;
   background-size: cover;
   }
@@ -4361,7 +4208,7 @@ span.tax-palnning {
   padding: 0 320px;
 }
 .service2-section-areas{
-  background-image: url("https://html.vikinglab.agency/consult/assets/images/background/service2-bacground.png");
+  background-image: url("/webstatic/assets/images/pattern.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -4396,7 +4243,7 @@ span.tax-palnning {
   transition: all .4s ease-in-out;
 }
 a.learn-more:hover {
-  color: #1A237E;
+  color: #08195c;
   transition: all .4s ease-in-out;
 }
 a.learn-more:hover span {
@@ -4601,7 +4448,7 @@ img.elementor-18 {
 }
 .service4-boxarea5:hover{
   border-radius: 2px;
-background: var(--main-color, #1D2940);
+background: var(--main-color, #08195c);
 transition: all .4s ease-in-out;
 }
 .service4-boxarea5:hover .service5-icons{
@@ -4649,7 +4496,7 @@ img.elementor25 {
 }
 .singlepalnning-area:hover{
   border-radius: 2px;
-background: var(--main-text-color, #1D2940);
+background: var(--main-text-color, #08195c);
 transition: all .4s ease-in-out;
 }
 .singlepalnning-area:hover a{
@@ -4670,7 +4517,7 @@ transition: all .4s ease-in-out;
 }
 a.docbtn1 {
   border-radius: 2px;
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   padding: 18px 24px;
   display: inline-block;
 }
@@ -4683,10 +4530,10 @@ a.docbtn1 img {
 }
 a.docbtn1:hover {
   background: #fff;
-  color: #1D2940;
+  color: #08195c;
 }
 a.docbtn1:hover {
-  color: #1D2940;
+  color: #08195c;
   transition: all .4s ease-in-out;
 }
 a.docbtn1:hover img {
@@ -4708,7 +4555,7 @@ a.docbtn1:hover img {
 }
 .docbtn2:hover{
   border-radius: 2px;
-background: var(--main-text-color, #1D2940);
+background: var(--main-text-color, #08195c);
 transition: all .4s ease-in-out;
 color: #fff;
 }
@@ -4739,7 +4586,7 @@ color: #fff;
 
 .needed-section a:hover {
   border-radius: 2px;
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   transition: all .4s ease-in-out;
   color: #fff;
 }
@@ -4790,7 +4637,7 @@ line-height: 16px; /* 100% */
 }
 button.quitobtn {
   border-radius: 2px;
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   border: none;
   outline: none;
   padding: 18px 20px;
@@ -4817,7 +4664,7 @@ button.quitobtn:hover{
   padding: 0 50px 0 50px;
 }
 .border30 {
-  border: 1px solid #1D2940;
+  border: 1px solid #08195c;
   opacity: 0.2;
   margin-top: 60px;
   margin-bottom: 60px;
@@ -4857,7 +4704,7 @@ img.approahimages {
 }
 .approach-area:hover {
   border-radius: 2px;
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, 0.09);
 }
 .approach-area:hover .approach-img{
@@ -5219,7 +5066,9 @@ img.elementors62 {
   right: 0;
 }
 .serviceleftblog-section-area {
-  background: var(--Gray-Color, #EFF7FF);
+       background: url(/webstatic/assets/images/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 img.elementors63 {
@@ -5867,7 +5716,7 @@ a.multiplebtn i {
 }
 .preview-homepagesarea::after{
   position: absolute;
-  background: #1D2940;
+  background: #08195c;
   height: 100%;
   content: "";
   width: 100%;
@@ -5949,7 +5798,7 @@ a.lawconsulting:hover {
     bottom: 0;
     transition: all .4s ease-in-out;
     z-index: -1;
-    background: #1D2940;
+    background: #08195c;
     opacity: 0;
     visibility: hidden;
     border-radius: 5px;
@@ -6006,7 +5855,7 @@ a.linkabout:hover {
     object-fit: cover;
 }
 .features-section-area {
-    background: #1D2940;
+    background: #08195c;
     position: relative;
 }
 .features-boxareab {
@@ -6517,7 +6366,10 @@ img.elementor6 {
 
 /* homepage-2 counter */
 .counter2-section-area{
-  background: #E9EDF4;
+  background: url("/webstatic/assets/images/pattern.png");
+  background-repeat: no-repeat;
+  background-position: relative;
+  background-size: cover;
   padding: 80px 0;
 }
 .countre2-boxarea {
@@ -6533,7 +6385,7 @@ img.elementor6 {
 }
 .countre2-boxarea:hover{
   border-radius: 4px;
-  background: #1A237E;
+  background: #08195c;
   transition: all .4s ease-in-out;
   color: #fff;
 }
@@ -6964,7 +6816,7 @@ img.elementor-3 {
   position: relative;
 }
 .toggle-inner {
-  background: #1A237E;
+  background: #08195c;
 }
 .toggle-inner.inner2{
   background: #1252DE;
@@ -7628,7 +7480,7 @@ transition: all .4s ease-in-out;
   text-align: center;
 }
 .testomonial2-carousel-area.owl-carousel .owl-dots button.owl-dot.active {
-  background: #1A237E;
+  background: #08195c;
   opacity: 9;
 }
 .testomonial2-carousel-area1.owl-carousel .owl-dots {
@@ -7688,12 +7540,12 @@ transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 .testimonial5-section5-area .owl-nav button.owl-next:hover{
-  background: #1D2940;
+  background: #08195c;
   color: #fff;
   transition: all .4s ease-in-out;
 }
 .testimonial5-section5-area .owl-nav button.owl-prev:hover{
-  background: #1D2940;
+  background: #08195c;
   color: #fff;
   transition: all .4s ease-in-out;
 }
@@ -8233,7 +8085,7 @@ a.learnmore.learnmore1:hover {
   position: absolute;
   content: "";
   border-radius: 4px;
-  background: #1A237E;
+  background: #08195c;
   width: 0;
   height: 100%;
   z-index: -1;
@@ -8259,7 +8111,7 @@ a.learnmore.learnmore1:hover {
 
 .blog2-ahtuor2.blog-2ahthor{
   border-radius: 4px;
-background: #1A237E;
+background: #08195c;
 }
 .blog2-author-area {
   position: relative;
@@ -8337,7 +8189,7 @@ a.laearnmore2:hover {
 .blog-auhtor-text ul li {
   display: inline-block;
   align-items: center;
-  color: var(--main-color, #1D2940);
+  color: var(--main-color, #08195c);
   font-family: Outfit;
   font-size: 16px;
   font-style: normal;
@@ -8346,7 +8198,7 @@ a.laearnmore2:hover {
 }
 
 .blog-auhtor-text ul li a {
-  color: var(--main-color, #1D2940);
+  color: var(--main-color, #08195c);
   font-family: Outfit;
   font-size: 16px;
   font-style: normal;
@@ -8375,7 +8227,7 @@ a.learnmore3 span svg {
   transition: all .4s ease-in-out;
 }
 a.learnmore3:hover {
-  color: #1D2940;
+  color: #08195c;
   transition: all.4s ease-in-out;
 }
 .blog-auhtor-text {
@@ -8389,7 +8241,7 @@ a.learnmore3:hover {
 }
 .blog5-author5:hover .blog-auhtor-text{
   border-radius: 4px;
-  background: var(--main-color, #1D2940);
+  background: var(--main-color, #08195c);
   transition: all .4s ease-in-out;
   color: #fff;
 }
@@ -8434,12 +8286,12 @@ a.laearnmore2.bloginnerhover:hover {
 }
 .blog2-ahtuor2.blog2inner:hover {
   border-radius: 4px;
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   transition: all .4s ease-in-out;
 }
 .blog2-ahtuor2.blog-2ahthor.bloinner2 {
   border-radius: 4px;
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
 }
 .recenrblos-area {
   border-radius: 2px;
@@ -8502,7 +8354,7 @@ a.laearnmore2.bloginnerhover:hover {
   position: absolute;
   height: 16px;
   /* stroke-width: 1px; */
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   opacity: 0.4;
   right: -29%;
   z-index: 1;
@@ -8531,7 +8383,7 @@ img.w-100.innerimg {
 }
 .peragraph-pera.peragraeabg{
   border-radius: 2px;
-background: var(--main-text-color, #1D2940);
+background: var(--main-text-color, #08195c);
 margin-top: 32px;
 margin-bottom: 60px;
 }
@@ -8560,7 +8412,7 @@ margin-bottom: 60px;
   width: 60px;
   height: 60px;
   /* background: #24BA96; */
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;
 }
@@ -8579,7 +8431,7 @@ margin-bottom: 60px;
   height: 50px;
   /* background: #24BA96; */
   border-radius: 50%;
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   transition: all 200ms;
 }
 
@@ -8688,7 +8540,7 @@ margin-bottom: 60px;
 
 .posttags ul li a:hover {
   border-radius: 2px;
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   color: #fff;
   transition: all .4s ease-in-out;
 }
@@ -8711,7 +8563,7 @@ margin-bottom: 60px;
 .share-area ul li a:hover{
   transition: all .4s ease-in-out;
   border-radius: 32.149px;
-background: var(--main-text-color, #1D2940);
+background: var(--main-text-color, #08195c);
 color: #fff;
 }
 .postsocial-area {
@@ -8764,7 +8616,7 @@ color: #fff;
   outline: none;
 }
 .bloginput input::placeholder{
-  color: var(--main-text-color, #1D2940);
+  color: var(--main-text-color, #08195c);
   font-family: 'Kumbh Sans', sans-serif;
 font-size: 16px;
 font-style: normal;
@@ -8773,7 +8625,7 @@ line-height: 16px;
 opacity: 0.7;
 }
 .bloginput textarea::placeholder{
-  color: var(--main-text-color, #1D2940);
+  color: var(--main-text-color, #08195c);
   font-family: 'Kumbh Sans', sans-serif;
 font-size: 16px;
 font-style: normal;
@@ -8827,7 +8679,7 @@ background: #007DE7;
 
 .blog2-ahtuor2.blog-2ahthor{
   border-radius: 4px;
-background: #1A237E;
+background: #08195c;
 }
 .blog2-author-area {
   position: relative;
@@ -9370,7 +9222,7 @@ button.theme-get-tex:hover::after {
 
 /* homepage2 contact */
 .contact2-section-area{
-  background-image: url("https://html.vikinglab.agency/consult/assets/images/background/service2-bacground.png");
+  background-image: url("/webstatic/assets/images/service2-bacground.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -9394,7 +9246,7 @@ button.theme-get-tex:hover::after {
 }
 .contact2-auhtor-section:hover {
   border-radius: 4px;
-  background: #1A237E;
+  background: #08195c;
   color: #fff;
   transition: all .4s ease-in-out;
 }
@@ -9423,7 +9275,7 @@ button.theme-get-tex:hover::after {
 }
 .contact-phonr-bg{
   border-radius: 4px;
-background: #1A237E;
+background: #08195c;
 }
 .contact2-all-contact{
   border-radius: 4px;
@@ -9506,14 +9358,14 @@ a.contact3.contactboredrbtn {
   line-height: 16px;
 }
 .contcat5-section-area{
-  background-image: url("https://html.vikinglab.agency/consult/assets/images/background/practice4-background.png");
-  background-position: center;
-  background-size: cover;
+      background: url(/webstatic/assets/images/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   background-repeat: no-repeat;
   position: relative;
 }
 .phone7-icon {
-  background: #1D2940;
+  background: #08195c;
   display: inline-block;
   height: 70px;
   width: 70px;
@@ -9537,7 +9389,7 @@ a.contact3.contactboredrbtn {
 }
 .contact5-main-section {
   border-radius: 4px;
-  background: var(--main-color, #1D2940);
+  background: var(--main-color, #08195c);
   padding: 32px;
 }
 .input-5area input {
@@ -9621,10 +9473,10 @@ button.contcat5:hover {
 }
 .contact2-auhtor-section.contacrtblogbg:hover {
   border-radius: 2px;
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
 }
 .contacblogbg{
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
 }
 .gmap_canvas {
   width: 100%;
@@ -10319,7 +10171,7 @@ span.current {
 }
 .client-author-area:hover{
   border-radius: 2px;
-  background: #1A237E;
+  background: #08195c;
   transition: all .4s ease-in-out;
 }
 .client-author-area:hover .client-icon{
@@ -10380,7 +10232,7 @@ img.elementor-19 {
     box-shadow: none;
 }
 button.accordion-button.collapsed {
-  color: var(--main-color, #1D2940);
+  color: var(--main-color, #08195c);
   font-family: 'Lora', serif;
   font-size: 20px;
   font-style: normal;
@@ -10389,7 +10241,7 @@ button.accordion-button.collapsed {
 }
  .accordion-button:not(.collapsed){
   border-radius: 2px;
-background: var(--main-color, #1D2940);
+background: var(--main-color, #08195c);
 } 
 .accordion-button:not(.collapsed){
 color: #fff;
@@ -10405,7 +10257,7 @@ button.accordion-button{
 }
 .accordion-body {
   border-radius: 2px;
-  background: var(--main-color, #1D2940);
+  background: var(--main-color, #08195c);
   color: #fff;
 }
 .accordion-body p {
@@ -10517,9 +10369,9 @@ img.elementors67 {
 
 /*----=========== CASE STUDY AREA CSS----============*/
 .case-study-scetion-area{
-  background-image: url("https://html.vikinglab.agency/consult/assets/images/background/casestudy-bacground.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+       background: url(/webstatic/assets/images/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   position: relative;
 }
 .case-img img {
@@ -10631,12 +10483,12 @@ ul.pagination {
 }
 
 li.page-item.pagecolor a {
-  background: #1D2940;
+  background: #08195c;
   color: #fff;
 }
 ul.pagination li a {
   border-radius: 2px;
-  /* background: var(--main-text-color, #1D2940); */
+  /* background: var(--main-text-color, #08195c); */
   border-radius: 2px;
   background: #EFF7FF;
   color: #fff;
@@ -10655,7 +10507,7 @@ ul.pagination li a {
 }
 
 ul.pagination li a:hover {
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   transition: all .4s ease-in-out;
   color: #fff;
 }
@@ -10712,7 +10564,7 @@ ul.pagination li a:hover {
 
 .tags-area ul li a:hover {
   border-radius: 2px;
-  background: var(--main-text-color, #1D2940);
+  background: var(--main-text-color, #08195c);
   transition: all .4s ease-in-out;
   color: #fff;
 }
@@ -10994,7 +10846,7 @@ a.hovertext:hover {
 
 /*----=========== CTA AREA CSS----============*/
 .cta2-section-area{
-  background: #1A237E;
+  background: #08195c;
   position: relative;
 }
 .theme5-btn button {
@@ -11002,7 +10854,7 @@ a.hovertext:hover {
   background: #FFF;
   border: none;
   padding: 21px 22px;
-  color: #1A237E;
+  color: #08195c;
   text-transform: uppercase;
 }
 .theme5-btn button span {
@@ -11093,7 +10945,7 @@ a.contact4:hover {
   transition: all .4s ease-in-out;
 }
 .cta4-section-area{
-  background-image:url("https://html.vikinglab.agency/consult/assets/images/sectionimg/cta-backgruoud.png");
+  background-image:url("/webstatic/assets/images/cta-backgruoud.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11104,7 +10956,7 @@ a.contact4:hover {
   content: "";
   height: 100%;
   opacity: 0.9;
-  background: var(--main-color, #1D2940);
+  background: var(--main-color, #08195c);
   width: 100%;
   top: 0;
   z-index: 1;
@@ -11169,7 +11021,7 @@ a.theme6-btn6.bakgrnd51 {
 a.theme6-btn6.bakgrnd51:hover {
   color: #fff;
   transition: all .4s ease-in-out;
-  background: var(--main-color, #1D2940);
+  background: var(--main-color, #08195c);
 }
 
 a.theme6-btn6.backgrnd62:hover {
@@ -11559,7 +11411,7 @@ img.elementors81 {
 	height: 80%;
 }
 .team-pera h1 a:hover {
-  color: #1D2940;
+  color: #08195c;
 }
 .project-thumb-two img {
   width: 100%;
@@ -11589,13 +11441,13 @@ img.elementors81 {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #1D2940;
+  color: #08195c;
   transition: all .4s ease-in-out;
   margin: 0 3px;
 }
 
 .project-content-two ul li a:hover {
-  background: #1D2940;
+  background: #08195c;
   transition: all .4s ease-in-out;
   color: #fff;
 }
@@ -11937,7 +11789,7 @@ img.elementors81 {
 
 /* homepage2 footer */
 .footer2-section-area{
-  background-image: url("https://html.vikinglab.agency/consult/assets/images/background/footerbg.png");
+  background-image: url("/webstatic/assets/images/homepage5bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11961,7 +11813,7 @@ img.elementors81 {
 }
 .social2-links ul li a:hover {
   background: #fff;
-  color: #1A237E;
+  color: #08195c;
   transition: all .3s ease-in-out;
 }
 .servicefooter-list ul li a:hover {
@@ -12108,7 +11960,7 @@ img.elementor-1 {
   left: 0;
 }
 .footer4-section-area{
-  background: var(--main-color, #1D2940);
+  background: var(--main-color, #08195c);
 }
 .icon-social-links ul li {
   display: inline-block;
@@ -12160,7 +12012,7 @@ img.elementor-1 {
     outline: none;
 }
 .contact6-ctafrom form input::placeholder{
-  color: var(--main-color, #1D2940);
+  color: var(--main-color, #08195c);
 
 font-size: 16px;
 font-style: normal;
@@ -12440,7 +12292,7 @@ img.elementors79 {
 }
 .get-preview1{
   border-radius: 5px;
-background: var(--Main-Text-Color, #1D2940);
+background: var(--Main-Text-Color, #08195c);
 padding: 14px 22px;
 transition: all .4s ease-in-out;
 line-height: 28px;
