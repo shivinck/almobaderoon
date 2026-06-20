@@ -31,10 +31,28 @@ class PageController extends Controller
         return view('web.pages.blogs');
     }
 
+    public function blogDetail(Request $request, String $slug)
+    {
+        View::share('isHomePage', false);
+        if (!view()->exists("web.pages.blogs.{$slug}")) {
+            abort(404);
+        }
+        return view("web.pages.blogs.{$slug}");
+    }
+
     public function caseStudies(Request $request)
     {
         View::share('isHomePage', false);
         return view('web.pages.caseStudies');
+    }
+
+    public function caseStudyDetail(Request $request, String $slug)
+    {
+        View::share('isHomePage', false);
+        if (!view()->exists("web.pages.case-studies.{$slug}")) {
+            abort(404);
+        }
+        return view("web.pages.case-studies.{$slug}");
     }
 
     public function scheduleConsulation(Request $request)
@@ -46,7 +64,10 @@ class PageController extends Controller
     public function serviceDetail(Request $request, String $slug)
     {
         View::share('isHomePage', false);
-        return view('web.pages.serviceDetail');
+        if (!view()->exists("web.pages.service-categories.{$slug}")) {
+            abort(404);
+        }
+        return view("web.pages.service-categories.{$slug}");
     }
 
     public function childServiceDetail(Request $request, String $parentSlug, String $childSlug)

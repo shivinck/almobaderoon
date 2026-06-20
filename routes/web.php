@@ -17,6 +17,15 @@ use Illuminate\Support\Facades\Route;
         Route::get('/service/{slug}', [PageController::class, 'serviceDetail'])->name('get.service');
         Route::get('/services/{parentSlug}/{childSlug}', [PageController::class, 'childServiceDetail'])->name('get.childService');
 
+        // Blog detail route
+        Route::get('/blog/{slug}', [PageController::class, 'blogDetail'])->name('get.blogDetail');
+
+        // Case study detail route
+        Route::get('/case-study/{slug}', [PageController::class, 'caseStudyDetail'])->name('get.caseStudyDetail');
+
+        // Contact form submission
+        Route::post('/contact/send', [AjaxController::class, 'sendContactForm'])->name('post.contactForm');
+
         Route::fallback(function () {
             return response()->view('errors.404', [], 404);
         });

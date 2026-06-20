@@ -180,7 +180,7 @@
 
                                     <div class="theme-btn4">
                              
-                                                                                <a href="{{ url('schedule-consulation') }}" class="theme-btn5 font-outfit font-16 weight-700">Schedule Consulation<span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                                                                                <a href="/contact" class="theme-btn5 font-outfit font-16 weight-700">Schedule Consulation<span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                                                                            
                                     </div>
                                 </div>
