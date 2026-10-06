@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
         Route::get('/blogs', [PageController::class, 'blogs'])->name('get.blogs');
         Route::get('/case-studies', [PageController::class, 'caseStudies'])->name('get.caseStudies');
         Route::get('/schedule-consulation', [PageController::class, 'scheduleConsulation'])->name('get.scheduleConsulation');
+        Route::post('/schedule-consulation', [AjaxController::class, 'sendConsultationRequest'])->name('post.scheduleConsulation');
+        Route::get('/liquidation', [PageController::class, 'liquidation'])->name('get.liquidation');
 
         // Parent service routes
         Route::get('/service/{slug}', [PageController::class, 'serviceDetail'])->name('get.service');
@@ -25,6 +27,9 @@ use Illuminate\Support\Facades\Route;
 
         // Contact form submission
         Route::post('/contact/send', [AjaxController::class, 'sendContactForm'])->name('post.contactForm');
+
+        // XML sitemap
+        Route::get('/sitemap.xml', [PageController::class, 'sitemap'])->name('get.sitemap');
 
         Route::fallback(function () {
             return response()->view('errors.404', [], 404);

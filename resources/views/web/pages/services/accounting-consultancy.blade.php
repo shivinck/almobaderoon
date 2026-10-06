@@ -27,22 +27,17 @@
                     </div>
 
                     <div class="singlepalnning-area margin-b20">
-                        <a href="{{ url('services/accounting-bookkeeping-services/bookkeeping-services') }}" class="font-18 font-ks lineh-18 weight-600 color-29 ts">Bookkeeping Services</a>
+                        <a href="{{ url('services/accounting-bookkeeping-services/financial-statements-pl-balance-sheet') }}" class="font-18 font-ks lineh-18 weight-600 color-29 ts">Financial Statements (P&L, Balance Sheet)</a>
                         <span><i class="fa-solid fa-angle-right ts"></i></span>
                     </div>
 
                     <div class="singlepalnning-area margin-b20">
-                        <a href="{{ url('services/accounting-bookkeeping-services/accounting-audit') }}" class="font-18 font-ks lineh-18 weight-600 color-29 ts">Accounting Audit</a>
+                        <a href="{{ url('services/accounting-bookkeeping-services/ar-ap-aging-reports') }}" class="font-18 font-ks lineh-18 weight-600 color-29 ts">AR/AP & Aging Reports</a>
                         <span><i class="fa-solid fa-angle-right ts"></i></span>
                     </div>
 
                     <div class="singlepalnning-area margin-b20">
-                        <a href="{{ url('services/accounting-bookkeeping-services/financial-reporting') }}" class="font-18 font-ks lineh-18 weight-600 color-29 ts">Financial Reporting</a>
-                        <span><i class="fa-solid fa-angle-right ts"></i></span>
-                    </div>
-
-                    <div class="singlepalnning-area margin-b20">
-                        <a href="{{ url('services/accounting-bookkeeping-services/accounting-systems') }}" class="font-18 font-ks lineh-18 weight-600 color-29 ts">Accounting Systems</a>
+                        <a href="{{ url('services/accounting-bookkeeping-services/financial-analysis-ratios-break-even') }}" class="font-18 font-ks lineh-18 weight-600 color-29 ts">Financial Analysis (Ratios, Break-even)</a>
                         <span><i class="fa-solid fa-angle-right ts"></i></span>
                     </div>
                 </div>
@@ -167,11 +162,11 @@
                     <div class="row">
                         <div class="col-lg-6 ">
                             <div class="service3-text2">
-                                <a href="{{ url('services/accounting-bookkeeping-services/bookkeeping-services') }}">
-                                    <h1 class="font-lora font-22 lineh-24 color-29 weight-600 margin-b">Bookkeeping Services</h1>
+                                <a href="{{ url('services/accounting-bookkeeping-services/financial-statements-pl-balance-sheet') }}">
+                                    <h1 class="font-lora font-22 lineh-24 color-29 weight-600 margin-b">Financial Statements (P&L, Balance Sheet)</h1>
                                 </a>
-                                <p class="font-ks font-16 lineh-26 weight-500 color-30">Complete bookkeeping and transaction management services ensuring accurate financial records and timely reconciliations.</p>
-                                <a href="{{ url('services/accounting-bookkeeping-services/bookkeeping-services') }}" class="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <p class="font-ks font-16 lineh-26 weight-500 color-30">Preparation of accurate profit & loss statements and balance sheets that reflect your true financial position.</p>
+                                <a href="{{ url('services/accounting-bookkeeping-services/financial-statements-pl-balance-sheet') }}" class="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -188,11 +183,11 @@
                     <div class="row">
                         <div class="col-lg-6 ">
                             <div class="service3-text2">
-                                <a href="{{ url('services/accounting-bookkeeping-services/accounting-audit') }}">
-                                    <h1 class="font-lora font-22 lineh-24 color-29 weight-600 margin-b">Accounting Audit</h1>
+                                <a href="{{ url('services/accounting-bookkeeping-services/ar-ap-aging-reports') }}">
+                                    <h1 class="font-lora font-22 lineh-24 color-29 weight-600 margin-b">AR/AP & Aging Reports</h1>
                                 </a>
-                                <p class="font-ks font-16 lineh-26 weight-500 color-30">Professional accounting audit services ensuring accuracy, compliance, and integrity of your financial records.</p>
-                                <a href="{{ url('services/accounting-bookkeeping-services/accounting-audit') }}" class="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <p class="font-ks font-16 lineh-26 weight-500 color-30">Accounts receivable and payable management with detailed aging reports to keep your cash flow healthy.</p>
+                                <a href="{{ url('services/accounting-bookkeeping-services/ar-ap-aging-reports') }}" class="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -209,11 +204,11 @@
                     <div class="row">
                         <div class="col-lg-6 ">
                             <div class="service3-text2">
-                                <a href="{{ url('services/accounting-bookkeeping-services/financial-reporting') }}">
-                                    <h1 class="font-lora font-22 lineh-24 color-29 weight-600 margin-b">Financial Reporting</h1>
+                                <a href="{{ url('services/accounting-bookkeeping-services/financial-analysis-ratios-break-even') }}">
+                                    <h1 class="font-lora font-22 lineh-24 color-29 weight-600 margin-b">Financial Analysis (Ratios, Break-even)</h1>
                                 </a>
-                                <p class="font-ks font-16 lineh-26 weight-500 color-30">Comprehensive financial reporting services providing timely and accurate business performance insights.</p>
-                                <a href="{{ url('services/accounting-bookkeeping-services/financial-reporting') }}" class="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <p class="font-ks font-16 lineh-26 weight-500 color-30">In-depth financial analysis including key ratios and break-even assessments to guide smarter business decisions.</p>
+                                <a href="{{ url('services/accounting-bookkeeping-services/financial-analysis-ratios-break-even') }}" class="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -230,11 +225,11 @@
                     <div class="row">
                         <div class="col-lg-6 ">
                             <div class="service3-text2">
-                                <a href="{{ url('services/accounting-bookkeeping-services/accounting-systems') }}">
-                                    <h1 class="font-lora font-22 lineh-24 color-29 weight-600 margin-b">Accounting Systems</h1>
+                                <a href="{{ url('service/accounting-bookkeeping-services') }}">
+                                    <h1 class="font-lora font-22 lineh-24 color-29 weight-600 margin-b">All Accounting & Bookkeeping Services</h1>
                                 </a>
-                                <p class="font-ks font-16 lineh-26 weight-500 color-30">Expert accounting system selection, implementation, and optimization for enhanced operational efficiency.</p>
-                                <a href="{{ url('services/accounting-bookkeeping-services/accounting-systems') }}" class="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <p class="font-ks font-16 lineh-26 weight-500 color-30">Explore our full range of accounting and bookkeeping solutions tailored to keep your business compliant and informed.</p>
+                                <a href="{{ url('service/accounting-bookkeeping-services') }}" class="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="col-lg-6">

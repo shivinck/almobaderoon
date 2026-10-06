@@ -145,4 +145,57 @@ class AjaxController extends Controller
 
         return response()->json(['message' => 'Thank you for contacting us!', 'success' => true], 200);
     }
+
+    public function sendConsultationRequest(Request $request)
+    {
+        $validated = $request->validate([
+            'full_name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'required|string|max:50',
+            'company_name' => 'nullable|string|max:255',
+            'service_interest' => 'required|string|max:255',
+            'consultation_date' => 'required|date|after_or_equal:today',
+            'consultation_time' => 'required|string|max:50',
+            'consultation_format' => 'required|string|in:video,phone,in-person',
+            'business_challenge' => 'required|string|min:10|max:3000',
+            'agree_terms' => 'accepted',
+        ], [
+            'agree_terms.accepted' => 'Please accept the privacy policy and terms of service.',
+            'consultation_date.after_or_equal' => 'Please choose a consultation date that is today or later.',
+        ]);
+
+        $data = [
+            'full_name' => $validated['full_name'],
+            'email' => $validated['email'],
+            'phone' => $validated['phone'],
+            'company_name' => $request->input('company_name'),
+            'service_interest' => $validated['service_interest'],
+            'consultation_date' => $validated['consultation_date'],
+            'consultation_time' => $validated['consultation_time'],
+            'consultation_format' => $validated['consultation_format'],
+            'business_challenge' => $validated['business_challenge'],
+        ];
+
+        // Resolve the recipient: ADMIN_EMAIL first, then the app's configured from address.
+        $adminEmail = env('ADMIN_EMAIL') ?: config('mail.from.address');
+
+        try {
+            Mail::send('emails.consultation', $data, function ($message) use ($adminEmail, $data) {
+                $message->to($adminEmail)
+                    ->subject('New Consultation Request - ' . $data['full_name'])
+                    ->replyTo($data['email'], $data['full_name']);
+            });
+        } catch (Exception $e) {
+            report($e);
+
+            return redirect()
+                ->route('get.scheduleConsulation')
+                ->withInput()
+                ->with('error', 'Sorry, we could not send your request right now. Please try again later or call us directly.');
+        }
+
+        return redirect()
+            ->route('get.scheduleConsulation')
+            ->with('success', 'Thank you! Your consultation request has been received. We will be in touch within 24 hours.');
+    }
 }

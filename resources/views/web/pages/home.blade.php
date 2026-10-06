@@ -178,11 +178,11 @@
                             <img src="{{ url('/webstatic/assets/images/icon5.png') }}" alt="">
                         </div>
 
-                        <a href="{{ url('service/iso-certifications') }}">
-                            <h1 class="font-outfit font-22 weight-600 lineh-22 color-17 margin-b">ISO Certifications</h1>
+                        <a href="{{ url('services/icv-certification/unified-icv-program') }}">
+                            <h1 class="font-outfit font-22 weight-600 lineh-22 color-17 margin-b">ICV Certifications</h1>
                         </a>
-                        <p class="font-outfit font-16 lineh-26 weight-400 color-15">Complete ISO certification services including quality management, environmental, health & safety, and security standards.</p>
-                        <a href="{{ url('service/iso-certifications') }}" class="font-16 font-outfit weight-700 color-17 lineh-26 text-uppercase margin-t32 d-inline-block learn-more">LEARN MORE <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        <p class="font-outfit font-16 lineh-26 weight-400 color-15">Get your ICV certifications and enhance your professional credentials with our expert guidance.</p>
+                        <a href="{{ url('services/icv-certification/unified-icv-program') }}" class="font-16 font-outfit weight-700 color-17 lineh-26 text-uppercase margin-t32 d-inline-block learn-more">LEARN MORE <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                     </div>
                 </div>
 
@@ -197,8 +197,24 @@
                         <a href="{{ url('service/other-services') }}">
                             <h1 class="font-outfit font-22 weight-600 lineh-22 color-17 margin-b">Management Consultancy</h1>
                         </a>
-                        <p class="font-outfit font-16 lineh-26 weight-400 color-15">ESR/FIU compliance, customs code services, PRO management consultancy, and company formation services.</p>
+                        <p class="font-outfit font-16 lineh-26 weight-400 color-15">Advisory consultant, Accounting advisory, and Business management advisory.</p>
                         <a href="{{ url('service/other-services') }}" class="font-16 font-outfit weight-700 color-17 lineh-26 text-uppercase margin-t32 d-inline-block learn-more">LEARN MORE <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1800" data-aos-easing="linear">
+                    <div class="service-after-before">
+                        <div class="service2-icon">
+                            <img src="{{ url('/webstatic/assets/images/icon3.svg') }}" alt="">
+                        </div>
+
+                        <a href="{{ url('liquidation') }}">
+                            <h1 class="font-outfit font-22 weight-600 lineh-22 color-17 margin-b">Liquidation</h1>
+                        </a>
+                        <p class="font-outfit font-16 lineh-26 weight-400 color-15">LLC license liquidation, Liquidation and audit services, Court and newspaper, Court approval, and DD cancellation formalities.</p>
+                        <a href="{{ url('liquidation') }}" class="font-16 font-outfit weight-700 color-17 lineh-26 text-uppercase margin-t32 d-inline-block learn-more">LEARN MORE <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                     </div>
                 </div>
             </div>

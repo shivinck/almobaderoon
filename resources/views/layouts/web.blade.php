@@ -64,6 +64,7 @@
 
     <script src="{{ url('/webstatic/assets/js/plugins/jquery-3-6-0.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    @stack('styles')
 </head>
 
 <body>
@@ -98,7 +99,7 @@
                                     <li><a href="{{ url('/about') }}" class="font-outfit font-18 weight-500 color-1">About Us</a></li>
                                     <li><a href="#" class="font-outfit font-18 weight-500 color-1">Our Services <span><i class="fa-solid fa-angle-down"></i></span></a>
                                         <ul class="dropdown-padding">
-                                            <li><a href="{{ url('services/tax-accounting-services') }}" class="font-outfit font-16 weight-500 color">Tax & Accounting Services <span><i class="fa-solid fa-angle-right"></i></span></a>
+                                            <li><a href="{{ url('service/tax-accounting-services') }}" class="font-outfit font-16 weight-500 color">Tax & Accounting Services <span><i class="fa-solid fa-angle-right"></i></span></a>
                                                 <ul>
                                                     <li><a href="{{ url('services/tax-accounting-services/accounting-setup-vat-ct') }}" class="font-outfit font-16 weight-500 color-1">Accounting Setup (VAT & CT)</a></li>
                                                     <li><a href="{{ url('services/tax-accounting-services/tax-registration') }}" class="font-outfit font-16 weight-500 color-1">Tax Registration</a></li>
@@ -107,7 +108,7 @@
                                                     <li><a href="{{ url('services/tax-accounting-services/tax-accounting-review-vat-ct') }}" class="font-outfit font-16 weight-500 color-1">Tax Accounting Review (VAT & CT)</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="{{ url('services/accounting-bookkeeping-services') }}" class="font-outfit font-16 weight-500 color">Accounting & Book Keeping Services <span><i class="fa-solid fa-angle-right"></i></span></a>
+                                            <li><a href="{{ url('service/accounting-bookkeeping-services') }}" class="font-outfit font-16 weight-500 color">Accounting & Book Keeping Services <span><i class="fa-solid fa-angle-right"></i></span></a>
                                                 <ul>
                                                     <li><a href="{{ url('services/accounting-bookkeeping-services/accounting-consultancy') }}" class="font-outfit font-16 weight-500 color-1">Accounting Consultancy</a></li>
                                                     <li><a href="{{ url('services/accounting-bookkeeping-services/financial-statements-pl-balance-sheet') }}" class="font-outfit font-16 weight-500 color-1">Financial Statements (P&L, Balance Sheet)</a></li>
@@ -115,7 +116,7 @@
                                                     <li><a href="{{ url('services/accounting-bookkeeping-services/financial-analysis-ratios-break-even') }}" class="font-outfit font-16 weight-500 color-1">Financial Analysis (Ratios, Break-even)</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="{{ url('services/vat-corporate-tax-services') }}" class="font-outfit font-16 weight-500 color">VAT & Corporate Tax Services <span><i class="fa-solid fa-angle-right"></i></span></a>
+                                            <li><a href="{{ url('service/vat-corporate-tax-services') }}" class="font-outfit font-16 weight-500 color">VAT & Corporate Tax Services <span><i class="fa-solid fa-angle-right"></i></span></a>
                                                 <ul>
                                                     <li><a href="{{ url('services/vat-corporate-tax-services/tax-consulting-advisory') }}" class="font-outfit font-16 weight-500 color-1">Tax Consulting & Advisory</a></li>
                                                     <li><a href="{{ url('services/vat-corporate-tax-services/vat-corporate-tax-registration-deregistration') }}" class="font-outfit font-16 weight-500 color-1">VAT/Corporate Tax Registration & De-registration</a></li>
@@ -124,7 +125,7 @@
                                                     <li><a href="{{ url('services/vat-corporate-tax-services/tax-refund-processing') }}" class="font-outfit font-16 weight-500 color-1">Tax Refund Processing</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="{{ url('services/audit-assurance') }}" class="font-outfit font-16 weight-500 color">Audit & Assurance <span><i class="fa-solid fa-angle-right"></i></span></a>
+                                            <li><a href="{{ url('service/audit-assurance') }}" class="font-outfit font-16 weight-500 color">Audit & Assurance <span><i class="fa-solid fa-angle-right"></i></span></a>
                                                 <ul>
                                                     <li><a href="{{ url('services/audit-assurance/financial-tax-corporate-audits') }}" class="font-outfit font-16 weight-500 color-1">Financial, Tax & Corporate Audits</a></li>
                                                     <li><a href="{{ url('services/audit-assurance/internal-audit-external-audit') }}" class="font-outfit font-16 weight-500 color-1">Internal Audit & External Audit</a></li>
@@ -133,7 +134,7 @@
                                                     <li><a href="{{ url('services/audit-assurance/company-liquidation-business-valuation') }}" class="font-outfit font-16 weight-500 color-1">Company Liquidation & Business Valuation</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="{{ url('services/practical-accounting-training') }}" class="font-outfit font-16 weight-500 color">Practical Accounting Training <span><i class="fa-solid fa-angle-right"></i></span></a>
+                                            <li><a href="{{ url('service/practical-accounting-training') }}" class="font-outfit font-16 weight-500 color">Practical Accounting Training <span><i class="fa-solid fa-angle-right"></i></span></a>
                                                 <ul>
                                                     <li><a href="{{ url('services/practical-accounting-training/accounting-tax-courses-vat-corporate-tax-financial-accounting') }}" class="font-outfit font-16 weight-500 color-1">Accounting & Tax Courses (VAT, Corporate Tax, Financial Accounting)</a></li>
                                                     <li><a href="{{ url('services/practical-accounting-training/software-training-excel-quickbooks-tally') }}" class="font-outfit font-16 weight-500 color-1">Software Training (Excel, QuickBooks, Tally)</a></li>
@@ -141,7 +142,7 @@
                                                     <li><a href="{{ url('services/practical-accounting-training/1-month-practical-training') }}" class="font-outfit font-16 weight-500 color-1">1-Month Practical Training</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="{{ url('services/iso-certifications') }}" class="font-outfit font-16 weight-500 color">ISO Certifications <span><i class="fa-solid fa-angle-right"></i></span></a>
+                                            <li><a href="{{ url('service/iso-certifications') }}" class="font-outfit font-16 weight-500 color">ISO Certifications <span><i class="fa-solid fa-angle-right"></i></span></a>
                                                 <ul>
                                                     <li><a href="{{ url('services/iso-certifications/iso-9001-quality-management') }}" class="font-outfit font-16 weight-500 color-1">ISO 9001 – Quality Management</a></li>
                                                     <li><a href="{{ url('services/iso-certifications/iso-14001-environmental-management') }}" class="font-outfit font-16 weight-500 color-1">ISO 14001 – Environmental Management</a></li>
@@ -153,7 +154,7 @@
                                                     <li><a href="{{ url('services/iso-certifications/iso-13485-medical-devices-quality-management') }}" class="font-outfit font-16 weight-500 color-1">ISO 13485 – Medical Devices Quality Management</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="{{ url('services/other-services') }}" class="font-outfit font-16 weight-500 color">Other Services <span><i class="fa-solid fa-angle-right"></i></span></a>
+                                            <li><a href="{{ url('service/other-services') }}" class="font-outfit font-16 weight-500 color">Other Services <span><i class="fa-solid fa-angle-right"></i></span></a>
                                                 <ul>
                                                     <li><a href="{{ url('services/other-services/esr-fiu-goaml-compliance') }}" class="font-outfit font-16 weight-500 color-1">ESR, FIU & GoAML Compliance</a></li>
                                                     <li><a href="{{ url('services/other-services/customs-code-services') }}" class="font-outfit font-16 weight-500 color-1">Customs Code Services</a></li>
@@ -161,7 +162,7 @@
                                                     <li><a href="{{ url('services/other-services/company-formation-business-services') }}" class="font-outfit font-16 weight-500 color-1">Company Formation & Business Services</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="{{ url('services/icv-certification') }}" class="font-outfit font-16 weight-500 color">ICV Certification <span><i class="fa-solid fa-angle-right"></i></span></a>
+                                            <li><a href="{{ url('service/icv-certification') }}" class="font-outfit font-16 weight-500 color">ICV Certification <span><i class="fa-solid fa-angle-right"></i></span></a>
                                                 <ul>
                                                     <li><a href="{{ url('services/icv-certification/unified-icv-program') }}" class="font-outfit font-16 weight-500 color-1">Unified ICV Program</a></li>
                                                     <li><a href="{{ url('services/icv-certification/icv-point-optimization-program') }}" class="font-outfit font-16 weight-500 color-1">ICV Point Optimization Program</a></li>
@@ -180,7 +181,7 @@
 
                                     <div class="theme-btn4">
                              
-                                                                                <a href="/contact" class="theme-btn5 font-outfit font-16 weight-700">Schedule Consulation<span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                                                                                <a href="{{ url('schedule-consulation') }}" class="theme-btn5 font-outfit font-16 weight-700">Schedule Consulation<span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                                                                            
                                     </div>
                                 </div>
@@ -199,7 +200,7 @@
             <div class="col-12">
                 <div class="mobile-header-elements">
                     <div class="mobile-logo">
-                        <a href="index.html"><img src="{{ url('webstatic/assets/images/logo/logo-white.png') }}" alt=""></a>
+                        <a href="{{ url('/') }}"><img src="{{ url('webstatic/assets/images/logo/logo-white.png') }}" alt=""></a>
                     </div>
                     <div class="mobile-nav-icon dots-menu">
                         <i class="fa-solid fa-bars"></i>
@@ -226,7 +227,7 @@
 
                 <li><a href="#" class="font-outfit font-16 weight-500 color">Our Services</a>
                     <ul class="sub-menu">
-                        <li><a href="{{ url('services/tax-accounting-services') }}" class="font-outfit font-16 weight-500 color">Tax & Accounting Services</a>
+                        <li><a href="{{ url('service/tax-accounting-services') }}" class="font-outfit font-16 weight-500 color">Tax & Accounting Services</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ url('services/tax-accounting-services/accounting-setup-vat-ct') }}" class="font-outfit font-16 weight-500 color-1">Accounting Setup (VAT & CT)</a></li>
                                 <li><a href="{{ url('services/tax-accounting-services/tax-registration') }}" class="font-outfit font-16 weight-500 color-1">Tax Registration</a></li>
@@ -235,7 +236,7 @@
                                 <li><a href="{{ url('services/tax-accounting-services/tax-accounting-review-vat-ct') }}" class="font-outfit font-16 weight-500 color-1">Tax Accounting Review (VAT & CT)</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('services/accounting-bookkeeping-services') }}" class="font-outfit font-16 weight-500 color">Accounting & Bookkeeping Services</a>
+                        <li><a href="{{ url('service/accounting-bookkeeping-services') }}" class="font-outfit font-16 weight-500 color">Accounting & Bookkeeping Services</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ url('services/accounting-bookkeeping-services/accounting-consultancy') }}" class="font-outfit font-16 weight-500 color-1">Accounting Consultancy</a></li>
                                 <li><a href="{{ url('services/accounting-bookkeeping-services/financial-statements-pl-balance-sheet') }}" class="font-outfit font-16 weight-500 color-1">Financial Statements (P&L, Balance Sheet)</a></li>
@@ -243,7 +244,7 @@
                                 <li><a href="{{ url('services/accounting-bookkeeping-services/financial-analysis-ratios-break-even') }}" class="font-outfit font-16 weight-500 color-1">Financial Analysis (Ratios, Break-even)</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('services/vat-corporate-tax-services') }}" class="font-outfit font-16 weight-500 color">VAT & Corporate Tax Services</a>
+                        <li><a href="{{ url('service/vat-corporate-tax-services') }}" class="font-outfit font-16 weight-500 color">VAT & Corporate Tax Services</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ url('services/vat-corporate-tax-services/tax-consulting-advisory') }}" class="font-outfit font-16 weight-500 color-1">Tax Consulting & Advisory</a></li>
                                 <li><a href="{{ url('services/vat-corporate-tax-services/vat-corporate-tax-registration-deregistration') }}" class="font-outfit font-16 weight-500 color-1">VAT/Corporate Tax Registration & De-registration</a></li>
@@ -252,7 +253,7 @@
                                 <li><a href="{{ url('services/vat-corporate-tax-services/tax-refund-processing') }}" class="font-outfit font-16 weight-500 color-1">Tax Refund Processing</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('services/audit-assurance') }}" class="font-outfit font-16 weight-500 color">Audit & Assurance</a>
+                        <li><a href="{{ url('service/audit-assurance') }}" class="font-outfit font-16 weight-500 color">Audit & Assurance</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ url('services/audit-assurance/financial-tax-corporate-audits') }}" class="font-outfit font-16 weight-500 color-1">Financial, Tax & Corporate Audits</a></li>
                                 <li><a href="{{ url('services/audit-assurance/internal-audit-external-audit') }}" class="font-outfit font-16 weight-500 color-1">Internal Audit & External Audit</a></li>
@@ -261,7 +262,7 @@
                                 <li><a href="{{ url('services/audit-assurance/company-liquidation-business-valuation') }}" class="font-outfit font-16 weight-500 color-1">Company Liquidation & Business Valuation</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('services/practical-accounting-training') }}" class="font-outfit font-16 weight-500 color">Practical Accounting Training</a>
+                        <li><a href="{{ url('service/practical-accounting-training') }}" class="font-outfit font-16 weight-500 color">Practical Accounting Training</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ url('services/practical-accounting-training/accounting-tax-courses-vat-corporate-tax-financial-accounting') }}" class="font-outfit font-16 weight-500 color-1">Accounting & Tax Courses (VAT, Corporate Tax, Financial Accounting)</a></li>
                                 <li><a href="{{ url('services/practical-accounting-training/software-training-excel-quickbooks-tally') }}" class="font-outfit font-16 weight-500 color-1">Software Training (Excel, QuickBooks, Tally)</a></li>
@@ -269,7 +270,7 @@
                                 <li><a href="{{ url('services/practical-accounting-training/1-month-practical-training') }}" class="font-outfit font-16 weight-500 color-1">1-Month Practical Training</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('services/iso-certifications') }}" class="font-outfit font-16 weight-500 color">ISO Certifications</a>
+                        <li><a href="{{ url('service/iso-certifications') }}" class="font-outfit font-16 weight-500 color">ISO Certifications</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ url('services/iso-certifications/iso-9001-quality-management') }}" class="font-outfit font-16 weight-500 color-1">ISO 9001 – Quality Management</a></li>
                                 <li><a href="{{ url('services/iso-certifications/iso-14001-environmental-management') }}" class="font-outfit font-16 weight-500 color-1">ISO 14001 – Environmental Management</a></li>
@@ -281,7 +282,7 @@
                                 <li><a href="{{ url('services/iso-certifications/iso-13485-medical-devices-quality-management') }}" class="font-outfit font-16 weight-500 color-1">ISO 13485 – Medical Devices Quality Management</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('services/other-services') }}" class="font-outfit font-16 weight-500 color">Other Services</a>
+                        <li><a href="{{ url('service/other-services') }}" class="font-outfit font-16 weight-500 color">Other Services</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ url('services/other-services/esr-fiu-goaml-compliance') }}" class="font-outfit font-16 weight-500 color-1">ESR, FIU & GoAML Compliance</a></li>
                                 <li><a href="{{ url('services/other-services/customs-code-services') }}" class="font-outfit font-16 weight-500 color-1">Customs Code Services</a></li>
@@ -289,7 +290,7 @@
                                 <li><a href="{{ url('services/other-services/company-formation-business-services') }}" class="font-outfit font-16 weight-500 color-1">Company Formation & Business Services</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('services/icv-certification') }}" class="font-outfit font-16 weight-500 color">ICV Certification</a>
+                        <li><a href="{{ url('service/icv-certification') }}" class="font-outfit font-16 weight-500 color">ICV Certification</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ url('services/icv-certification/unified-icv-program') }}" class="font-outfit font-16 weight-500 color-1">Unified ICV Program</a></li>
                                 <li><a href="{{ url('services/icv-certification/icv-point-optimization-program') }}" class="font-outfit font-16 weight-500 color-1">ICV Point Optimization Program</a></li>
@@ -303,7 +304,7 @@
                 <li><a href="{{ url('contact') }}" class="font-outfit font-16 weight-500 color">Contact</a></li>
             </ul>
             <div class="allmobilesection">
-                <a href="#" class="font-outfit font-18 lineh-18 weight-700 color mobilemenubtn">Get Started</a>
+                <a href="{{ url('schedule-consulation') }}" class="font-outfit font-18 lineh-18 weight-700 color mobilemenubtn">Get Started</a>
                 <div class="single-footer single-footer-menu single-footer4">
                     <h3 class="font-outfit font-24 lineh-24 weight-600 color margin-b margin-t24">Contact Info</h3>
                     <div class="footer4-contact-info">
@@ -405,12 +406,12 @@
                                     <h1 class="font-20 color-21 lineh-20 font-outfit margin-b24 weight-600">Our services</h1>
                                     <div class="servicefooter-list">
                                         <ul>
-                                            <li><a href="#" class="font-outfit font-16 color-21 lineh-16 weight-400">Tax & Accounting Services</a></li>
-                                            <li><a href="#" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">VAT & Corporate Tax</a></li>
-                                            <li><a href="#" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Audit & Assurance</a></li>
-                                            <li><a href="#" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">ISO Certifications</a></li>
-                                            <li><a href="#" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">ICV Certification</a></li>
-                                            <li><a href="#" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Training Programs</a></li>
+                                            <li><a href="{{ url('service/tax-accounting-services') }}" class="font-outfit font-16 color-21 lineh-16 weight-400">Tax & Accounting Services</a></li>
+                                            <li><a href="{{ url('service/vat-corporate-tax-services') }}" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">VAT & Corporate Tax</a></li>
+                                            <li><a href="{{ url('service/audit-assurance') }}" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Audit & Assurance</a></li>
+                                            <li><a href="{{ url('service/iso-certifications') }}" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">ISO Certifications</a></li>
+                                            <li><a href="{{ url('service/icv-certification') }}" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">ICV Certification</a></li>
+                                            <li><a href="{{ url('service/practical-accounting-training') }}" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Training Programs</a></li>
                                         </ul>
                                     </div>
 
@@ -422,12 +423,12 @@
                                     <h1 class="font-20 color-21 lineh-20 font-outfit margin-b24 weight-600">Useful Links</h1>
                                     <div class="servicefooter-list">
                                         <ul>
-                                            <li><a href="index.html" class="font-outfit font-16 color-21 lineh-16 weight-400">Home</a></li>
-                                            <li><a href="about.html" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">About Us </a></li>
-                                            <li><a href="servicev1.html" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Our Services</a></li>
-                                            <li><a href="casestudy1.html" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Case Study</a></li>
-                                            <li><a href="blog2.html" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Blog</a></li>
-                                            <li><a href="team.html" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Team</a></li>
+                                            <li><a href="{{ url('/') }}" class="font-outfit font-16 color-21 lineh-16 weight-400">Home</a></li>
+                                            <li><a href="{{ url('/about') }}" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">About Us </a></li>
+                                            <li><a href="{{ url('service/tax-accounting-services') }}" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Our Services</a></li>
+                                            <li><a href="{{ url('case-studies') }}" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Case Study</a></li>
+                                            <li><a href="{{ url('blogs') }}" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Blog</a></li>
+                                            <li><a href="{{ url('/contact') }}" class="font-outfit font-16 color-21 lineh-16 weight-400 margin-t d-inline-block">Contact</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -491,6 +492,7 @@ Khalidiyah, W4 <br>Abu Dhabi, UAE</a>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="{{ url('/webstatic/assets/js/plugins/mobilemenu.js') }}"></script>
     <script src="{{ url('/webstatic/assets/js/main.js') }}"></script>
+    @stack('scripts')
 </body>
 
 </html>
